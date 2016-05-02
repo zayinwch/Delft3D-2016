@@ -2,6 +2,6 @@ These Julia functions convert data from Google Earth kml files into properly for
 
 gedata_reformat converts a Google Earth kml file into a txt file useable with Delft3D
 
-ge_compilation will merge files modified with gedata_reformat into a single bathymetry.txt file
+ge_compilation merges files modified with gedata_reformat into a single bathymetry.txt file
 
 
