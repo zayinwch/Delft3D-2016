@@ -7,8 +7,7 @@ Converts a Google Earth kml file (with depth data added in a third, comma-separa
 inputfile is the name of the kml file
 outputfile is the name of the new txt file
 
-An input kml file should be for a path or a polygon at a single depth on Google 
-Earth
+An input kml file should be a file generated from a path or a polygon at a single depth on Google Earth
 
 """
 function gedata_reformat(inputfile,outputfile)
