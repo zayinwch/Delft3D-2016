@@ -13,11 +13,12 @@ function mdfannotate(inputfile, outputfile)
     open(inputfile, "r") do inp
         open(outputfile, "w") do otp
             for ln in eachline(inp)
-                if ismatch(r"Fil(\w*)",ln)
+                m = match(r"Fil(\w*)",ln)
+                if m == nothing
                     write(otp,ln)
-                    write(otp,"Fmt",ln[4:6]," = #FR#\n")
                 else
                     write(otp,ln)
+                    write(otp,"Fmt",m[1]," = #FR#\n")
                 end
             end
         end
